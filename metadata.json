@@ -1,0 +1,5 @@
+{
+  "name": "Precision Navigator",
+  "description": "A premium parking payments and navigation app for the modern driver.",
+  "requestFramePermissions": ["geolocation"]
+}

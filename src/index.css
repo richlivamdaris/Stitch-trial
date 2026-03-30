@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #000666;
+  --color-primary-container: #1a237e;
+  --color-on-primary: #ffffff;
+  
+  --color-surface: #f3faff;
+  --color-on-surface: #071e27;
+  --color-on-surface-variant: #454652;
+  
+  --color-surface-container-low: #e6f6ff;
+  --color-surface-container-high: #d5ecf8;
+  --color-surface-container-lowest: #ffffff;
+  
+  --color-tertiary-fixed: #a3f69c;
+  --color-on-tertiary-fixed-variant: #005312;
+  --color-on-tertiary-container: #5aa958;
+  
+  --color-outline-variant: #c6c5d4;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body antialiased;
+  }
+}
+
+.glass-card {
+  background: rgba(243, 250, 255, 0.7);
+  backdrop-filter: blur(16px);
+}
+
+.timer-gradient {
+  background: linear-gradient(135deg, #000666 0%, #1a237e 100%);
+}
